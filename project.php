@@ -1,7 +1,6 @@
-//Shows the full details of a selected project and owner information
 <?php
 require_once 'db.php';
-
+//Shows the full details of a selected project and owner information
 // Check if project ID exists
 if (!isset($_GET['pid'])) {
     die("Project ID not provided.");

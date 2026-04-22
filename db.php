@@ -1,5 +1,5 @@
-//Creates the PDO database connection used across the application
 <?php
+//Creates the PDO database connection used across the application
 $host = "localhost";
 $dbname = "project_manager";
 $username = "root";

@@ -1,7 +1,6 @@
-//Displays all projects and allows public users to search by title or date
 <?php
 require_once 'db.php';
-
+//Displays all projects and allows public users to search by title or date
 $search = "";
 
 if (isset($_GET['search'])) {

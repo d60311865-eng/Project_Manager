@@ -1,6 +1,6 @@
-//Authenticates users, verifies passwords securely, and starts a protected session
 <?php
 require_once 'db.php';
+//Authenticates users, verifies passwords securely, and starts a protected session
 session_start();
 // Validate CSRF token
 if (empty($_SESSION['csrf_token'])) {

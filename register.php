@@ -1,6 +1,6 @@
-//Handles user registration with validation,duplicate checks, password hashing, and CSRF protection
 <?php
 require_once 'db.php';
+//Handles user registration with validation,duplicate checks, password hashing, and CSRF protection
 session_start();
 
 // Generate CSRF token
