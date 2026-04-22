@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -67,4 +68,75 @@ main {
 
         .project-card button:hover {
             color: #004999;
+=======
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+    header h1 {
+        margin: 0;
+    }
+
+nav {
+    margin-top: 10px;
+}
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+    }
+
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.project-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+    .project-card h3 {
+        margin-top: 0;
+    }
+
+    .project-card a {
+        text-decoration: none;
+        color: #0066cc;
+    }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+    .project-card form {
+        display: inline;
+    }
+
+    .project-card button {
+        background: none;
+        border: none;
+        color: #0066cc;
+        text-decoration: underline;
+        cursor: pointer;
+        font: inherit;
+        padding: 0;
+    }
+
+        .project-card button:hover {
+            color: #004999;
+>>>>>>> 02983e44d05fd4e829d6a06f795e249585bced94
         }
