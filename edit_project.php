@@ -50,6 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (empty($title) || empty($start_date) || empty($end_date) || empty($short_description) || empty($phase)) {
         $message = "All fields are required.";
+    } elseif ($end_date < $start_date) {
+        $message = "End date cannot be earlier than start date.";
     } elseif (!in_array($phase, $allowed_phases)) {
         $message = "Invalid phase.";
     } else {

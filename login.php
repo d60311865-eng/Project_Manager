@@ -1,6 +1,8 @@
+//Authenticates users, verifies passwords securely, and starts a protected session
 <?php
 require_once 'db.php';
 session_start();
+// Validate CSRF token
 if (empty($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
@@ -22,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if ($user && password_verify($password, $user["password"])) {
+            session_regenerate_id(true);
             // Store user in session
             $_SESSION["user_id"] = $user["uid"];
             $_SESSION["username"] = $user["username"];

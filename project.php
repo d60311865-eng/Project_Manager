@@ -1,3 +1,4 @@
+//Shows the full details of a selected project and owner information
 <?php
 require_once 'db.php';
 

@@ -1,3 +1,4 @@
+//Displays only the logged in user's projects and provides management options
 <?php
 require_once 'db.php';
 session_start();
