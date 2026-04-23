@@ -120,5 +120,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <button type="submit">Update Project</button>
         </form>
     </main>
+    <script>
+  document.querySelector("form").addEventListener("submit", function(e) {
+    const start = document.querySelector("[name='start_date']").value;
+    const end = document.querySelector("[name='end_date']").value;
+    const title = document.querySelector("[name='title']").value.trim();
+    const desc = document.querySelector("[name='short_description']").value.trim();
+    const phase = document.querySelector("[name='phase']").value;
+
+    if (!title || !start || !end || !desc || !phase) {
+      alert("All fields are required.");
+      e.preventDefault();
+      return;
+    }
+
+    if (end < start) {
+      alert("End date cannot be earlier than start date.");
+      e.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
